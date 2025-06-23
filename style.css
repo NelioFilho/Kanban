@@ -15,8 +15,88 @@ body{
     background: linear-gradient(90deg, #a5b4fc, #93c5fd);
 }
 
+.new-card{
+    display: none;
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 14px;
+    padding: 10px;
+    box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.1);
+    width: inherit;
+    height: inherit;
+}
+
+.new-card.show{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-new-card.show{
+    position: absolute;
+    width: 50vw;
+    height: 40vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.close-card{
+    height: 8vh;
+    position: relative;
+    left: 48%;
+}
+
+.close-card .fa-solid{
+    color: #634b4b;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.custom-dropdown {
+  position: relative;
+    width: 45vw;
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#priorityInput {
+  padding: 8px;
+  cursor: pointer;
+}
+
+.dropdown-list {
+  display: none;
+  position: absolute;
+  width: 100%;
+  background: #fff;
+  border: 1px solid #ccc;
+  z-index: 1000;
+}
+
+.option {
+  padding: 8px;
+  cursor: pointer;
+}
+
+.option:hover {
+  background-color: #f0f0f0;
+}
+
+.content-card{
+    margin: 5px;
+    border-radius: 7px;
+    text-align: center;
+}
+
+
 .kanban{
     display: flex;
+    flex-direction: row;
+    justify-content: center;
     gap: 14px;
     padding: 24px;
     width: 100%;
